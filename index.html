@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="assets/style.css">
   <title>Mesivta Shaarei Torah Grade 9 Boys Timetable!</title>
   <link rel="shortcut icon" href="assets/images/Shaarei Torah Logo.png" type="image/x-icon">
+  <script>
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+  }
+  </script>
 </head>
 
 <body>
